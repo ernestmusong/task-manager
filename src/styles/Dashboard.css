@@ -62,8 +62,8 @@
 #left-sidebar {
   width: 13%;
   left: 0;
-  padding-left: .5rem ;
-  padding-right: .5rem ;
+  padding-left: 0.5rem ;
+  padding-right: 0.5rem ;
 }
 
 #right-sidebar {
@@ -199,14 +199,14 @@
 
 .main {
   position: absolute;
-  height: 100%;
+  height: auto;
   overflow-y: scroll;
   overflow-x: hidden;
   background: var(--clr-white);
   z-index: 1;
   width: 70%;
   padding-right: 2rem;
-  padding-bottom: 4rem;
+  padding-left: 2rem;
   margin-left: 13%;
   margin-right: 17%;
   margin-top: 70px;
@@ -214,10 +214,6 @@
 
 .main::-webkit-scrollbar {
   display: none;
-}
-
-.contributions {
-  padding: 1rem;
 }
 
 /* -------------------------------------------------------------------Search form */
@@ -273,11 +269,13 @@
   .filter-form {
     background: #fff;
     width: 150px;
+    border-radius: 0.5rem;
+    padding: 0.25rem;
+
   }
 
   .select-form-wrap {
     width: 100%;
-    padding-left: 2rem;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
   }

@@ -1,18 +1,19 @@
 import React from 'react';
 
 const FilterForm = () => (
-  <div className="mid-nav">
-    <form className="search-wrapper">
-      <input
+  <div className="select-form-wrap">
+    <form className="filter-form">
+      <select
         type="search"
         name="search"
         id="search"
-        className="search-input"
-        placeholder="Search anything"
-      />
-      <button type="submit" id="search-button">
-        <CiSearch />
-      </button>
+        className="select-input"
+      >
+        <option value="All">show: All tasks</option>
+        <option value="To Do">To Do</option>
+        <option value="In Progess">In Progress</option>
+        <option value="Completed">Completed</option>
+      </select>
     </form>
   </div>
 );

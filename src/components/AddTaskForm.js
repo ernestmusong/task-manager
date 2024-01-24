@@ -41,7 +41,7 @@ const AddTaskForm = () => {
   });
 
   return (
-    <>
+    <main className="main">
       <Title title="Add Task" />
       <div className="signup-component">
         <form
@@ -194,7 +194,7 @@ const AddTaskForm = () => {
           <NavLink to="/" className="session-link">Go back</NavLink>
         </form>
       </div>
-    </>
+    </main>
   );
 };
 
