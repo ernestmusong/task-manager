@@ -65,9 +65,9 @@ const AddTaskForm = () => {
   return (
     <main className="main">
       <Title title="Add Task" />
-      <div className="task-form">
+      <div className="task-form-wrap">
         <form
-          className="register-form"
+          className="task-form"
           onSubmit={formik.handleSubmit}
         >
           <label style={{ color: 'Var(--darkBlue)' }} htmlFor="title">
@@ -112,7 +112,7 @@ const AddTaskForm = () => {
             </div>
           ) : null}
 
-          <label style={{ color: 'Var(--darkBlue)' }} htmlFor="assignees" className="form-label">
+          <label style={{ color: 'Var(--darkBlue)' }} htmlFor="assignees">
             Assignees
             <select
               className="add-form-select"
@@ -122,17 +122,14 @@ const AddTaskForm = () => {
               onChange={(e) => formik.setFieldValue('assignees', Array.from(e.target.selectedOptions, (option) => option.value))}
               value={formik.values.assignees}
             >
-              {/* <option className="text-muted" value="">
-                      Assignees
-                    </option> */}
               <option value="https://tse1.mm.bing.net/th?id=OIP.VAuEzdfI8cRI28R8U0s2zwHaFj&pid=Api&P=0&h=220">
-                Musong
+                Rihana
               </option>
-              <option value="https://tse1.mm.bing.net/th?id=OIP.VAuEzdfI8cRI28R8U0s2zwHaFj&pid=Api&P=0&h=220">
-                Ernest
+              <option value="https://www.athletespeakers.com/storage/celebrities/1532533778_the-undertaker.jpeg">
+                Undertaker
               </option>
-              <option value="https://tse1.mm.bing.net/th?id=OIP.VAuEzdfI8cRI28R8U0s2zwHaFj&pid=Api&P=0&h=220">
-                Akeh
+              <option value="https://tse4.mm.bing.net/th?id=OIP.VjjkjYZKFNuvP7sB3lySSQHaE8&pid=Api&P=0&h=220">
+                Eto&lsquo;o
               </option>
             </select>
           </label>
@@ -155,7 +152,10 @@ const AddTaskForm = () => {
               <option value="red">Red</option>
               <option value="green">Green</option>
               <option value="orange">Orange</option>
-
+              <option value="purple">Purple</option>
+              <option value="blue">Blue</option>
+              <option value="tomato">Tomato</option>
+              <option value="orange">Yellow</option>
             </select>
           </label>
           {formik.touched.color && formik.errors.color ? (
@@ -196,9 +196,10 @@ const AddTaskForm = () => {
           </div>
           )}
 
-          <div className=" mt-4 mb-4">
-            <div className="form-group col-lg-3">
-              <button type="submit" className="btn w-100 btn-block">submit</button>
+          <div className=" mt-2">
+            <div className="submit-btn-wrap">
+              <button type="submit" className="task-submit-btn">submit</button>
+              <NavLink to="/" className="goback-link">Cancel</NavLink>
             </div>
           </div>
 
@@ -216,7 +217,6 @@ const AddTaskForm = () => {
             </div>
           </div>
           )}
-          <NavLink to="/" className="session-link">Go back</NavLink>
         </form>
       </div>
     </main>
