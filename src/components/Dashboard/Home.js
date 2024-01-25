@@ -6,7 +6,9 @@ import FilterForm from './FilterForm';
 const Home = () => (
   <main className="main">
     <FilterForm />
-    <TodosList />
+    <div className="all-tasks">
+      <TodosList />
+    </div>
   </main>
 );
 

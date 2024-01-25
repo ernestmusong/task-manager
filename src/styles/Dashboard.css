@@ -216,6 +216,12 @@
   display: none;
 }
 
+.all-tasks {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 /* -------------------------------------------------------------------Search form */
 
 .mid-nav {

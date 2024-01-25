@@ -4,7 +4,6 @@ const FilterForm = () => (
   <div className="select-form-wrap">
     <form className="filter-form">
       <select
-        type="search"
         name="search"
         id="search"
         className="select-input"
