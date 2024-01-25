@@ -176,9 +176,9 @@ const EditTaskForm = () => {
               id="status"
               {...formik.getFieldProps('status')}
             >
-              <option value="red">Red</option>
-              <option value="green">Green</option>
-              <option value="orange">Orange</option>
+              <option value="todo">To Do</option>
+              <option value="inProgress">In Progress</option>
+              <option value="completed">Completed</option>
 
             </select>
           </label>

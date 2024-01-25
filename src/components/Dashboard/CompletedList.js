@@ -1,32 +1,27 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { FaSquarePlus } from 'react-icons/fa6';
 import { Link } from 'react-router-dom';
-import { useSelector, useDispatch } from 'react-redux';
-import { setTasks } from 'redux/tasks/tasksSlice';
+import { useSelector } from 'react-redux';
 import TaskItem from './TaskItem';
 import '../../styles/Tasks.css';
 
-const TodosList = () => {
-  const dispatch = useDispatch();
-  useEffect(() => {
-    dispatch(setTasks());
-  }, [dispatch]);
+const CompletedList = () => {
   const { tasks } = useSelector((store) => store.tasks);
-  const ToDoTasks = tasks.filter(((task) => task.status === 'todo')) || [];
+  const CompletedTasks = tasks.filter(((task) => task.status === 'completed')) || [];
   return (
     <div className="tasks-container">
       <div className="tasks-title-wrap">
-        <span>To Do</span>
+        <span>Completed</span>
         <Link to="/add-task" className="tasks-title-icon-wrap">
           <FaSquarePlus />
           <span style={{ fontSize: '0.5rem' }}>Add new card</span>
         </Link>
       </div>
       <div className="tasks-list">
-        {ToDoTasks.map((task) => <TaskItem key={task.id} task={task} />)}
+        {CompletedTasks.map((task) => <TaskItem key={task.id} task={task} />)}
       </div>
     </div>
   );
 };
 
-export default TodosList;
+export default CompletedList;

@@ -7,18 +7,18 @@ import '../../styles/Tasks.css';
 
 const InProgressList = () => {
   const { tasks } = useSelector((store) => store.tasks);
-  const inProgress = tasks.filter(((task) => task.status === inProgress));
+  const inProgressTasks = tasks.filter(((task) => task.status === 'inProgress')) || [];
   return (
     <div className="tasks-container">
       <div className="tasks-title-wrap">
-        <span>To Do</span>
+        <span>In Progress</span>
         <Link to="/add-task" className="tasks-title-icon-wrap">
           <FaSquarePlus />
           <span style={{ fontSize: '0.5rem' }}>Add new card</span>
         </Link>
       </div>
       <div className="tasks-list">
-        {inProgress.map((task) => <TaskItem key={task.id} task={task} />)}
+        {inProgressTasks.map((task) => <TaskItem key={task.id} task={task} />)}
       </div>
     </div>
   );
