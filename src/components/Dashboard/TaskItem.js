@@ -2,10 +2,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import '../../styles/Tasks.css';
 import { Tooltip } from 'react-tooltip';
+import { useDispatch } from 'react-redux';
 import { FaEllipsisH } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import { selectTask } from 'redux/tasks/tasksSlice';
 
 const TaskItem = ({ task }) => {
+  const dispatch = useDispatch();
   const {
     color,
     title,
@@ -17,7 +20,14 @@ const TaskItem = ({ task }) => {
     <article className="task-item">
       <div className="task-item-title-wrap">
         <span style={{ color }}>{title}</span>
-        <Link to="/add-task" className="my-anchor-element" style={{ color: 'var(--softGrey)' }}>
+        <Link
+          to="/edit-task"
+          onClick={() => {
+            dispatch(selectTask(task));
+          }}
+          className="my-anchor-element"
+          style={{ color: 'var(--softGrey)' }}
+        >
           <FaEllipsisH />
         </Link>
         <Tooltip anchorSelect=".my-anchor-element" place="bottom">Edit this task</Tooltip>
