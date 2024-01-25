@@ -40,14 +40,19 @@ const TaskItem = ({ task }) => {
         <img src={image} className="task-item-img" alt="Task" />
       </div>
       )}
-      {assignees.map((assignee) => {
-        const id = assignees.indexOf(assignee);
-        return (
-          <div className="assignee-img-wrap" key={id}>
-            <img src={assignee} className="assignee-img" alt="assignee" />
-          </div>
-        );
-      })}
+      <div className="assignees-row">
+        {assignees.map((assignee) => {
+          const id = assignees.indexOf(assignee);
+          return (
+            <div className="assignees-imgs-wrap" key={id}>
+              <div className="assignee-img-wrap">
+                <img src={assignee} className="assignee-img" alt="assignee" />
+              </div>
+            </div>
+          );
+        })}
+        <div className="comments-wrap" />
+      </div>
     </article>
   );
 };
