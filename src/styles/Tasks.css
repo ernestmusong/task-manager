@@ -20,7 +20,7 @@
   }
 
 .tasks-container {
-    border: 0.5px solid var(--softGrey);
+    border: 0.05px solid var(--softGrey);
     padding: 0.5rem;
     border-radius: 0.5rem;
     width: 250px;
@@ -91,6 +91,7 @@
 .assignees-row {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding-left: 0.25rem;
 }
 
@@ -111,4 +112,18 @@
     height: 100%;
     max-width: 100%;
     border-radius: 25px;
+}
+
+.comments-wrap {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.comments-wrap span {
+     color: var(--softGrey);
+}
+
+.comments-value {
+    font-size: 0.5rem;
 }

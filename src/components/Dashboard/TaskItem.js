@@ -4,6 +4,7 @@ import '../../styles/Tasks.css';
 import { Tooltip } from 'react-tooltip';
 import { useDispatch } from 'react-redux';
 import { FaEllipsisH } from 'react-icons/fa';
+import { FaCommentSms, FaEnvelopeCircleCheck } from 'react-icons/fa6';
 import { Link } from 'react-router-dom';
 import { selectTask } from 'redux/tasks/tasksSlice';
 
@@ -41,17 +42,26 @@ const TaskItem = ({ task }) => {
       </div>
       )}
       <div className="assignees-row">
-        {assignees.map((assignee) => {
-          const id = assignees.indexOf(assignee);
-          return (
-            <div className="assignees-imgs-wrap" key={id}>
-              <div className="assignee-img-wrap">
+        <div className="assignees-imgs-wrap">
+          {assignees.map((assignee) => {
+            const id = assignees.indexOf(assignee);
+            return (
+              <div className="assignee-img-wrap" key={id}>
                 <img src={assignee} className="assignee-img" alt="assignee" />
               </div>
-            </div>
-          );
-        })}
-        <div className="comments-wrap" />
+            );
+          })}
+        </div>
+        <div className="comments-wrap">
+          <span>
+            <FaCommentSms />
+          </span>
+          <span className="comments-value">2</span>
+          <span>
+            <FaEnvelopeCircleCheck />
+          </span>
+          <span className="comments-value">10</span>
+        </div>
       </div>
     </article>
   );

@@ -1,6 +1,9 @@
 import React from 'react';
-import { FaBookOpen, FaGear } from 'react-icons/fa6';
-import { FaUser } from 'react-icons/fa';
+import { FaBookOpen, FaGear, FaCommentSms } from 'react-icons/fa6';
+import {
+  FaUser, FaHome, FaCalendarCheck, FaTasks,
+} from 'react-icons/fa';
+import { MdOutlineSupportAgent, MdLogout } from 'react-icons/md';
 import { RxDashboard } from 'react-icons/rx';
 import logo from 'becuda-logo.png';
 import { NavLink } from 'react-router-dom';
@@ -34,7 +37,7 @@ const LeftSideBar = () => {
           </li>
           <li className="list-item">
             <div className="list-item-icon-wrap">
-              <FaBookOpen />
+              <FaHome />
               <NavLink
                 to="/"
                 className={({ isActive }) => (isActive ? 'active' : 'normal')}
@@ -56,7 +59,7 @@ const LeftSideBar = () => {
           </li>
           <li className="list-item">
             <div className="list-item-icon-wrap">
-              <FaBookOpen />
+              <FaTasks />
               <NavLink
                 to="/"
                 className={({ isActive }) => (isActive ? 'active' : 'normal')}
@@ -70,7 +73,7 @@ const LeftSideBar = () => {
           </li>
           <li className="list-item">
             <div className="list-item-icon-wrap">
-              <FaBookOpen />
+              <FaCalendarCheck />
               <NavLink
                 to="/"
                 className={({ isActive }) => (isActive ? 'active' : 'normal')}
@@ -81,7 +84,7 @@ const LeftSideBar = () => {
           </li>
           <li className="list-item">
             <div className="list-item-icon-wrap">
-              <FaBookOpen />
+              <FaCommentSms />
               <NavLink
                 to="/"
                 className={({ isActive }) => (isActive ? 'active' : 'normal')}
@@ -108,7 +111,7 @@ const LeftSideBar = () => {
           <li className="list-item" style={{ fontSize: '0.5rem', paddingLeft: '0' }}>other</li>
           <li className="list-item">
             <div className="list-item-icon-wrap">
-              <FaUser />
+              <MdOutlineSupportAgent />
               <NavLink
                 to="/"
                 className={({ isActive }) => (isActive ? 'active' : 'normal')}
@@ -131,7 +134,7 @@ const LeftSideBar = () => {
         </ul>
         <div className="list-item">
           <div className="list-item-icon-wrap">
-            <FaUser />
+            <MdLogout />
             <button type="button" className="logout-btn">Logout</button>
           </div>
         </div>
