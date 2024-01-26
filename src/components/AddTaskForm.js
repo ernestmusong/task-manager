@@ -123,7 +123,7 @@ const AddTaskForm = () => {
               value={formik.values.assignees}
             >
               <option value="https://tse1.mm.bing.net/th?id=OIP.VAuEzdfI8cRI28R8U0s2zwHaFj&pid=Api&P=0&h=220">
-                Rihana
+                Roar
               </option>
               <option value="https://www.athletespeakers.com/storage/celebrities/1532533778_the-undertaker.jpeg">
                 Undertaker

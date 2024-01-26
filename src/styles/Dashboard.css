@@ -62,14 +62,16 @@
 #left-sidebar {
   width: 13%;
   left: 0;
-  padding-left: 0.5rem ;
-  padding-right: 0.5rem ;
+  padding-left: 0.75rem ;
+  padding-right: 0.75rem ;
 }
 
 #right-sidebar {
   right: 0;
   width: 17%;
   background: #fff;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 .right-sidebar-top {
@@ -281,6 +283,9 @@
   }
 
   .select-form-wrap {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
     width: 100%;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;

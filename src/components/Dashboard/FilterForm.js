@@ -14,6 +14,18 @@ const FilterForm = () => (
         <option value="Completed">Completed</option>
       </select>
     </form>
+    <form className="filter-form">
+      <select
+        name="search"
+        id="search"
+        className="select-input"
+      >
+        <option value="All">Sort by: Due time</option>
+        <option value="To Do">To Do</option>
+        <option value="In Progess">In Progress</option>
+        <option value="Completed">Completed</option>
+      </select>
+    </form>
   </div>
 );
 

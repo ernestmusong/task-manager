@@ -1,0 +1,131 @@
+:root {
+    --lightBlue: #1c2b3f;
+    --darkBlue: #182135;
+    --mainOrange: #f7902b;
+    --mainYellow: #ffa400;
+    --mainGreen: #008000;
+    --lightGreen: #00fff2;
+    --goldenYellow: #fff6a9;
+    --clr-grey: #8a8c8c;
+    --clr-grey-4: hsl(209, 28%, 39%);
+    --clr-white: #f0f0f0;
+    --softWhite: #fbfaf5;
+    --softGrey: #acaea9;
+    --heroWhite: #ffe6ff;
+    --clr-black: #000;
+    --lightRed: #ff65bd;
+    --mainGold: #daa520;
+    --simpleBlue: blue;
+  }
+  
+
+.Calendar-upcomming,
+.buttons-wrap {
+ display: flex;
+ align-items: center;
+}
+
+.Calendar-upcomming {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  justify-content: space-between;
+}
+
+.buttons-wrap {
+    gap: 0.5rem;
+}
+
+.calendar-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.dates {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.dates-title {
+ font-size:0.6rem ;
+ padding-top: 0.75rem;
+ padding-bottom: 0.75rem;
+}
+
+.blue,
+.grey,
+.purple {
+  text-transform: capitalize;
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 0.5rem;
+}
+
+.blue {
+  background: var(--simpleBlue);
+  color: var(--clr-white);
+  padding: 0.25rem 0.5rem;
+  width: 30%;
+}
+
+.grey {
+  background: var(--clr-white);
+  font-size: 0.5rem;
+  width: calc(70% - 0.5rem);
+  text-align: left;
+  padding-left: 0.5rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.purple {
+    background: rgb(111, 78, 232);
+    color: var(--clr-white);
+    padding: 0.25rem 0.5rem;
+    width: 30%;
+}
+
+.members-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  padding-bottom: 1rem;
+}
+
+.member-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 0.05px solid var(--softGrey);
+    border-radius: 0.5rem;
+    padding: 0.25rem 0.5rem;
+}
+
+.add-member-link-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.05px solid var(--softGrey);
+  padding: 0.8rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.member {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
+  
+  .profile-img-wrap {
+    width: 30px;
+    height: 30px;
+    border-radius: 25px;
+  }
+  
+  .profile-img {
+    max-width: 100%;
+    width: 30px;
+    height: 30px;
+    border-radius: 25px; 
+  }
+  

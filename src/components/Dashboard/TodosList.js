@@ -2,7 +2,8 @@ import React, { useEffect } from 'react';
 import { FaSquarePlus } from 'react-icons/fa6';
 import { Link } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
-import { setTasks } from 'redux/tasks/tasksSlice';
+import { useDrop } from 'react-dnd';
+import { setTasks, handleTodoDrop } from 'redux/tasks/tasksSlice';
 import TaskItem from './TaskItem';
 import '../../styles/Tasks.css';
 
@@ -11,6 +12,17 @@ const TodosList = () => {
   useEffect(() => {
     dispatch(setTasks());
   }, [dispatch]);
+
+  const [{ isOver }, drop] = useDrop({
+    accept: 'TASK',
+    drop: (item) => {
+      console.log(item);
+      dispatch(handleTodoDrop(item));
+    },
+    collect: (monitor) => ({
+      isOver: !!monitor.isOver(),
+    }),
+  });
   const { tasks } = useSelector((store) => store.tasks);
   const ToDoTasks = tasks.filter(((task) => task.status === 'todo')) || [];
   return (
@@ -22,7 +34,7 @@ const TodosList = () => {
           <span style={{ fontSize: '0.5rem' }}>Add new card</span>
         </Link>
       </div>
-      <div className="tasks-list">
+      <div ref={drop} className={`tasks-list ${isOver ? 'drop-active' : ''}`}>
         {ToDoTasks.map((task) => <TaskItem key={task.id} task={task} />)}
       </div>
     </div>

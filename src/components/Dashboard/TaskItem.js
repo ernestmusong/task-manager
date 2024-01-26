@@ -7,6 +7,7 @@ import { FaEllipsisH } from 'react-icons/fa';
 import { FaCommentSms, FaEnvelopeCircleCheck } from 'react-icons/fa6';
 import { Link } from 'react-router-dom';
 import { selectTask } from 'redux/tasks/tasksSlice';
+import { useDrag } from 'react-dnd';
 
 const TaskItem = ({ task }) => {
   const dispatch = useDispatch();
@@ -17,8 +18,17 @@ const TaskItem = ({ task }) => {
     image,
     assignees,
   } = task;
+
+  const [{ isDragging }, drag] = useDrag({
+    type: 'TASK',
+    item: { id: task.id },
+    collect: (monitor) => ({
+      isDragging: !!monitor.isDragging(),
+    }),
+  });
   return (
-    <article className="task-item">
+
+    <article className="task-item" ref={drag} style={{ opacity: isDragging ? 0.5 : 1, cursor: 'move' }}>
       <div className="task-item-title-wrap">
         <span style={{ color }}>{title}</span>
         <Link
@@ -34,7 +44,7 @@ const TaskItem = ({ task }) => {
         <Tooltip anchorSelect=".my-anchor-element" place="bottom">Edit this task</Tooltip>
       </div>
       <div className="task-item-desc-wrap">
-        <strong>{description}</strong>
+        <strong style={{ fontSize: '0.6rem' }}>{description}</strong>
       </div>
       {image && (
       <div className="task-item-img-wrap">

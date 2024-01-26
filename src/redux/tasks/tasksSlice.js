@@ -15,6 +15,7 @@ const tasksSlice = createSlice({
         tasks: allTasks,
       };
     },
+
     selectTask: (state, action) => {
       const taskSelected = action.payload;
       const updatedTasks = state.tasks.map((task) => {
@@ -30,8 +31,55 @@ const tasksSlice = createSlice({
         taskSelected,
       };
     },
+
+    handleTodoDrop: (state, { payload }) => {
+      const { id } = payload;
+      const updatedTasks = state.tasks.map((task) => {
+        if (task.id === id) {
+          return { ...task, status: 'todo' };
+        }
+        return task;
+      });
+      localStorage.setItem('tasks', JSON.stringify(updatedTasks));
+      return {
+        ...state,
+        tasks: updatedTasks,
+      };
+    },
+
+    handleIprogressDrop: (state, { payload }) => {
+      const { id } = payload;
+      const updatedTasks = state.tasks.map((task) => {
+        if (task.id === id) {
+          return { ...task, status: 'inProgress' };
+        }
+        return task;
+      });
+      localStorage.setItem('tasks', JSON.stringify(updatedTasks));
+      return {
+        ...state,
+        tasks: updatedTasks,
+      };
+    },
+
+    handleCompletedDrop: (state, { payload }) => {
+      const { id } = payload;
+      const updatedTasks = state.tasks.map((task) => {
+        if (task.id === id) {
+          return { ...task, status: 'completed' };
+        }
+        return task;
+      });
+      localStorage.setItem('tasks', JSON.stringify(updatedTasks));
+      return {
+        ...state,
+        tasks: updatedTasks,
+      };
+    },
   },
 });
 
-export const { setTasks, selectTask, editTask } = tasksSlice.actions;
+export const {
+  setTasks, selectTask, editTask, handleIprogressDrop, handleTodoDrop, handleCompletedDrop,
+} = tasksSlice.actions;
 export default tasksSlice.reducer;
