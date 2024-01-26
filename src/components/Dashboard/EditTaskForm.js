@@ -26,7 +26,7 @@ const EditTaskForm = () => {
     validationSchema: Yup.object({
       title: Yup.string().required('Title must not be empty'),
       description: Yup.string()
-        .max(200, 'Must be 200 characters or less')
+        .max(35, 'Must be 35 characters or less')
         .required('Description must not be empty'),
       assignees: Yup.array()
         .of(
