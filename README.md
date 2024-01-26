@@ -39,6 +39,7 @@ The app includes form validation to ensure that users provide necessary informat
  Redux is utilized for state management, enabling a centralized and predictable state container. This ensures data consistency and facilitates easy integration with React components.
  
  Tasks are dynamically rendered based on their status, providing an organized and visually appealing display. Users can easily identify and interact with tasks in different categories.
+ <img src="/public/task-manager.PNG"></img>
 
 ## 🛠 Built With <a name="built-with"></a>
 
