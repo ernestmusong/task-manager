@@ -1,5 +1,5 @@
 <a name="readme-top"></a>
-  <h3><b>Task management App</b></h3>
+  <h3><b>Task manager</b></h3>
 
 # 📗 Table of Contents
 
@@ -22,9 +22,23 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-# 📖 [Task management App] <a name="about-project"></a>
+# 📖 [Task manager] <a name="about-project"></a>
 
-**[Task management App]** The task management app is a user-friendly and efficient application designed to help users organize and track their tasks seamlessly. Users can easily create new tasks, specifying details such as title, description, assignees, color, image, and status. The app also supports task editing for updates or modifications. Tasks are categorized based on their status, such as "To Do," "In Progress," and "Completed." This categorization allows users to prioritize and visualize their tasks at a glance. Tasks can be assigned to specific individuals, and the app supports the inclusion of images for a more visual representation of tasks. Assignees and images provide additional context and personalization to each task. The app incorporates drag-and-drop functionality, allowing users to seamlessly move tasks between different status categories. This feature enhances user experience and simplifies task organization. Task data is persisted using the browser's LocalStorage, ensuring that users can access their tasks even after refreshing or reopening the app. This provides a seamless and persistent user experience. The app includes form validation to ensure that users provide necessary information when creating or editing tasks. This helps maintain data integrity and consistency. Redux is utilized for state management, enabling a centralized and predictable state container. This ensures data consistency and facilitates easy integration with React components. Tasks are dynamically rendered based on their status, providing an organized and visually appealing display. Users can easily identify and interact with tasks in different categories.
+**[Task manager]** The task manager app is a user-friendly and efficient application designed to help users organize and track their tasks seamlessly. Users can easily create new tasks, specifying details such as title, description, assignees, color, image, and status.
+
+The app also supports task editing for updates or modifications. Tasks are categorized based on their status, such as "To Do," "In Progress," and "Completed." This categorization allows users to prioritize and visualize their tasks at a glance.
+
+Tasks can be assigned to specific individuals, and the app supports the inclusion of images for a more visual representation of tasks. Assignees and images provide additional context and personalization to each task.
+
+The app incorporates drag-and-drop functionality, allowing users to seamlessly move tasks between different status categories. This feature enhances user experience and simplifies task organization.
+
+Task data is persisted using the browser's LocalStorage, ensuring that users can access their tasks even after refreshing or reopening the app. This provides a seamless and persistent user experience.
+
+The app includes form validation to ensure that users provide necessary information when creating or editing tasks. This helps maintain data integrity and consistency.
+
+ Redux is utilized for state management, enabling a centralized and predictable state container. This ensures data consistency and facilitates easy integration with React components.
+ 
+ Tasks are dynamically rendered based on their status, providing an organized and visually appealing display. Users can easily identify and interact with tasks in different categories.
 
 ## 🛠 Built With <a name="built-with"></a>
 
