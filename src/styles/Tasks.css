@@ -1,129 +1,129 @@
 :root {
-    --lightBlue: #1c2b3f;
-    --darkBlue: #182135;
-    --mainOrange: #f7902b;
-    --mainYellow: #ffa400;
-    --mainGreen: #008000;
-    --lightGreen: #00fff2;
-    --goldenYellow: #fff6a9;
-    --clr-grey: #8a8c8c;
-    --clr-grey-4: hsl(209, 28%, 39%);
-    --clr-white: #f0f0f0;
-    --softWhite: #fbfaf5;
-    --softGrey: #acaea9;
-    --heroWhite: #ffe6ff;
-    --clr-black: #000;
-    --lightRed: #ff65bd;
-    --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    --mainGold: #daa520;
-  }
+  --lightBlue: #1c2b3f;
+  --darkBlue: #182135;
+  --mainOrange: #f7902b;
+  --mainYellow: #ffa400;
+  --mainGreen: #008000;
+  --lightGreen: #00fff2;
+  --goldenYellow: #fff6a9;
+  --clr-grey: #8a8c8c;
+  --clr-grey-4: hsl(209, 28%, 39%);
+  --clr-white: #f0f0f0;
+  --softWhite: #fbfaf5;
+  --softGrey: #acaea9;
+  --heroWhite: #ffe6ff;
+  --clr-black: #000;
+  --lightRed: #ff65bd;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --mainGold: #daa520;
+}
 
 .tasks-container {
-    border: 0.05px solid var(--softGrey);
-    padding: 0.5rem;
-    border-radius: 0.5rem;
-    width: 250px;
+  border: 0.05px solid var(--softGrey);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  width: 250px;
 }
 
 .tasks-title-wrap {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  color: #333;
 }
 
 .tasks-title-icon-wrap {
-    display: flex;
-    align-items: center;
-    gap: 0.25rem;
-    text-decoration: none;
-    color: #333;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  text-decoration: none;
+  color: #333;
 }
 
 .task-item {
-    display: flex;
-    flex-direction: column;
-    gap: 0.4rem;
-    border-radius: 0.5rem;
-    padding: 0.25rem;
-    background: #fff;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  border-radius: 0.5rem;
+  padding: 0.25rem;
+  background: #fff;
+  width: 100%;
 }
 
 .task-item-title-wrap {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .task-item-desc-wrap {
-    display: flex;
-    width: 100%;
-    flex-wrap: nowrap;
+  display: flex;
+  width: 100%;
+  flex-wrap: nowrap;
 }
 
 .task-item-img-wrap {
-    width: 100%;
-    height: 150px;
-    border-radius: 0.5rem;
+  width: 100%;
+  height: 150px;
+  border-radius: 0.5rem;
 }
 
 .task-item-img {
-    width: 100%;
-    height: 100%;
-    max-width: 100%;
-    border-radius: 0.5rem;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  border-radius: 0.5rem;
 }
 
 .tasks-list {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    padding-top: 0.5rem;
-    position: relative;
-    width: 100%;
-    height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-top: 0.5rem;
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 .assignees-row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-left: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 0.25rem;
 }
 
 .assignee-img-wrap {
-    width: 16px;
-    height: 16px;
-    border-radius: 25px;
-    margin-left: -5px;
+  width: 16px;
+  height: 16px;
+  border-radius: 25px;
+  margin-left: -5px;
 }
 
 .assignees-imgs-wrap {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .assignee-img {
-    width: 100%;
-    height: 100%;
-    max-width: 100%;
-    border-radius: 25px;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  border-radius: 25px;
 }
 
 .comments-wrap {
-    display: flex;
-    align-items: center;
-    gap: 0.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
 }
 
 .comments-wrap span {
-     color: var(--softGrey);
+  color: var(--softGrey);
 }
 
 .comments-value {
-    font-size: 0.5rem;
+  font-size: 0.5rem;
 }

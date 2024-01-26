@@ -56,14 +56,13 @@
   background: var(--darkBlue);
   z-index: 999;
   top: 0;
-   
 }
 
 #left-sidebar {
   width: 13%;
   left: 0;
-  padding-left: 0.75rem ;
-  padding-right: 0.75rem ;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 #right-sidebar {
@@ -75,11 +74,11 @@
 }
 
 .right-sidebar-top {
- display: flex;
- align-items: center;
- justify-content: space-between;
- width: 100%;
- padding-right: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-right: 2rem;
 }
 
 .rightbar-top-icons {
@@ -106,7 +105,7 @@
 }
 
 .profile-img {
-  max-width: 100%; 
+  max-width: 100%;
 }
 
 .logo-wrapper {
@@ -184,8 +183,6 @@
   border-radius: 0.5rem;
 }
 
- 
-
 .nav-header {
   display: flex;
   align-items: center;
@@ -235,90 +232,90 @@
 }
 
 .search-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    background: var(--clr-white);
-    border-radius: 0.5rem;
-    padding: 0.25rem 0.75rem;
-  }
-  
-  .search-input,
-  .select-input {
-    border: none;
-    width: auto;
-    background: transparent;
-  }
-  
-  .search-input::placeholder {
-    color: var(--softGrey);
-    font-size: 0.5rem;
-  }
-  
-  .search-input:focus,
-  .select-input:focus {
-    outline: none;
-  }
-  
-  .search-input:focus:invalid,
-  .select-input:focus:invalid {
-    outline: none;
-  }
-  
-  #search-button {
-    font-size: 1rem;
-    border: none;
-    outline: none;
-    cursor: pointer;
-  }
-
-  /* -----------------------------------------------------------Filter form */
-
-  .filter-form {
-    background: #fff;
-    width: 150px;
-    border-radius: 0.5rem;
-    padding: 0.25rem;
-
-  }
-
-  .select-form-wrap {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    width: 100%;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-  }
-
-  .select-input {
-    color: var(--softGrey);
-    width: 100%;
-  }
-
-  /* -----------------------------------------------------------Add Form------------------------ */
-
-  .task-form-wrap {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 0.5rem;
-  }
-
-  .task-form {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-    background: #fff;
-    padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background: var(--clr-white);
+  border-radius: 0.5rem;
+  padding: 0.25rem 0.75rem;
 }
-  .task-form label {
-     width: 100%;
-     display: flex;
-     flex-direction: column;
+
+.search-input,
+.select-input {
+  border: none;
+  width: auto;
+  background: transparent;
+}
+
+.search-input::placeholder {
+  color: var(--softGrey);
+  font-size: 0.5rem;
+}
+
+.select-input {
+  color: var(--softGrey);
+  width: 100%;
+}
+
+.search-input:focus,
+.select-input:focus {
+  outline: none;
+}
+
+.search-input:focus:invalid,
+.select-input:focus:invalid {
+  outline: none;
+}
+
+#search-button {
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+/* -----------------------------------------------------------Filter form */
+
+.filter-form {
+  background: #fff;
+  width: 150px;
+  border-radius: 0.5rem;
+  padding: 0.25rem;
+}
+
+.select-form-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+/* -----------------------------------------------------------Add Form------------------------ */
+
+.task-form-wrap {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 0.5rem;
+}
+
+.task-form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  background: #fff;
+  padding: 0.5rem;
+}
+
+.task-form label {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .submit-btn-wrap {
@@ -356,7 +353,6 @@
   border-radius: 0 0 5px 5px;
   border: none;
 }
-
 
 .goback-link {
   background: red;

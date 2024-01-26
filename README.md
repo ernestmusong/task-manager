@@ -103,6 +103,14 @@ Clone this repository to your desired folder:
  ### Start:
  Run: npm start
 
+ ### Eslint:
+ Run: npx eslint "**/*.{js,jsx}" --fix
+
+ ### Eslint Check:
+ Run: npx eslint "**/*.{js,jsx}" --fix
+ ### Stylelint Check:
+ Run: npx stylelint "**/*.{css,scss}" --fix
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 👥 Authors <a name="authors"></a>

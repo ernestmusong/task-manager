@@ -1,101 +1,99 @@
 :root {
-    --lightBlue: #1c2b3f;
-    --darkBlue: #182135;
-    --mainOrange: #f7902b;
-    --mainYellow: #ffa400;
-    --mainGreen: #008000;
-    --lightGreen: #00fff2;
-    --goldenYellow: #fff6a9;
-    --clr-grey: #8a8c8c;
-    --clr-grey-4: hsl(209, 28%, 39%);
-    --clr-white: #f0f0f0;
-    --softWhite: #fbfaf5;
-    --softGrey: #acaea9;
-    --heroWhite: #ffe6ff;
-    --clr-black: #000;
-    --lightRed: #ff65bd;
-    --mainGold: #daa520;
-    --simpleBlue: blue;
-  }
-  
+  --lightBlue: #1c2b3f;
+  --darkBlue: #182135;
+  --mainOrange: #f7902b;
+  --mainYellow: #ffa400;
+  --mainGreen: #008000;
+  --lightGreen: #00fff2;
+  --goldenYellow: #fff6a9;
+  --clr-grey: #8a8c8c;
+  --clr-grey-4: hsl(209, 28%, 39%);
+  --clr-white: #f0f0f0;
+  --softWhite: #fbfaf5;
+  --softGrey: #acaea9;
+  --heroWhite: #ffe6ff;
+  --clr-black: #000;
+  --lightRed: #ff65bd;
+  --mainGold: #daa520;
+  --simpleBlue: blue;
+}
 
- .progress-bars-wrap {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 0.4rem;
-    width: 100%;
-    padding-bottom: 1rem;
- }
+.progress-bars-wrap {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.4rem;
+  width: 100%;
+  padding-bottom: 1rem;
+}
 
- .progress-item {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    border-radius: 0.5rem;
-    padding: 0.25rem 0;
-    background: #fff;
- }
+.progress-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-radius: 0.5rem;
+  padding: 0.25rem 0;
+  background: #fff;
+}
 
- .first-article {
-   background: transparent;
-   padding-top: 0.5rem;
-   padding-bottom: 0.5rem;
-   padding-left: 0;
- }
+.first-article {
+  background: transparent;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0;
+}
 
- .progress-title {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    text-transform: capitalize;
-    font-size: 0.75rem;
- }
+.progress-title {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-transform: capitalize;
+  font-size: 0.75rem;
+}
 
- .member-column {
-    width: 22.5%;
- }
+.member-column {
+  width: 22.5%;
+}
 
- .progress-column {
-    width: 50%;
- }
+.progress-column {
+  width: 50%;
+}
 
- .todo-column {
-    width: 22.5%;
- }
+.todo-column {
+  width: 22.5%;
+}
 
- .time-column {
-    width: 5%;
-    justify-content: flex-start;
- }
+.time-column {
+  width: 5%;
+  justify-content: flex-start;
+}
 
- .member {
-   padding-left: 0.5rem;
- }
+.member {
+  padding-left: 0.5rem;
+}
 
-  .profile-img-wrap {
-    width: 30px;
-    height: 30px;
-    border-radius: 25px;
-  }
-  
-  .profile-img {
-    max-width: 100%;
-    width: 30px;
-    height: 30px;
-    border-radius: 25px; 
-  }
+.profile-img-wrap {
+  width: 30px;
+  height: 30px;
+  border-radius: 25px;
+}
 
-  .progress-bar-container {
-   width: 94%;
-   height: 10px;
-   background-color: #f0f0f0;
-   border-radius: 4px;
-   overflow: hidden;
- }
- 
- .progress-bar {
-   height: 100%;
-   background-color: var(--mainYellow);
- }
-  
+.profile-img {
+  max-width: 100%;
+  width: 30px;
+  height: 30px;
+  border-radius: 25px;
+}
+
+.progress-bar-container {
+  width: 94%;
+  height: 10px;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: var(--mainYellow);
+}
