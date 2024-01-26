@@ -1,5 +1,5 @@
 <a name="readme-top"></a>
-  <h3><b>Cultural website</b></h3>
+  <h3><b>Task management App</b></h3>
 
 # 📗 Table of Contents
 
@@ -22,9 +22,9 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-# 📖 [Cultural website] <a name="about-project"></a>
+# 📖 [Task management App] <a name="about-project"></a>
 
-**[Cultural website]** A website created to manage the activities of my cultural association. Users can make contributions, keep track of their contributions and see records of all contributions of my cultural association. Built with React/Redux.
+**[Task management App]** The task management app is a user-friendly and efficient application designed to help users organize and track their tasks seamlessly. Users can easily create new tasks, specifying details such as title, description, assignees, color, image, and status. The app also supports task editing for updates or modifications. Tasks are categorized based on their status, such as "To Do," "In Progress," and "Completed." This categorization allows users to prioritize and visualize their tasks at a glance. Tasks can be assigned to specific individuals, and the app supports the inclusion of images for a more visual representation of tasks. Assignees and images provide additional context and personalization to each task. The app incorporates drag-and-drop functionality, allowing users to seamlessly move tasks between different status categories. This feature enhances user experience and simplifies task organization. Task data is persisted using the browser's LocalStorage, ensuring that users can access their tasks even after refreshing or reopening the app. This provides a seamless and persistent user experience. The app includes form validation to ensure that users provide necessary information when creating or editing tasks. This helps maintain data integrity and consistency. Redux is utilized for state management, enabling a centralized and predictable state container. This ensures data consistency and facilitates easy integration with React components. Tasks are dynamically rendered based on their status, providing an organized and visually appealing display. Users can easily identify and interact with tasks in different categories.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -46,16 +46,21 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **[User signup]**
-- **[User Login]**
-- **[User Logout]**
-- **[User Dashboard]**
-- **[ Contribute ]**
+- **[Task Creation]**
+- **[Task Editing]**
+- **[Drag and Drop]**
+- **[Image Upload and Preview]**
+- **[ Task Categorization ]**
+- **[ LocalStorage Persistence ]**
+- **[ Form Validation ]**
+- **[ Redux State Management ]**
+- **[ Dynamic Task Rendering ]**
+- **[ User Dasboard ]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-- [Live Demo Link](https://becuda.netlify.app/#/)
+- [Live Demo Link](#)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -63,7 +68,7 @@
 
 ### Preriquisites
 
-React >= 18.2.0
+React
 Node
 
 ### Setup
@@ -71,7 +76,7 @@ Node
 Clone this repository to your desired folder:
 sh
   cd my-folder
- git clone https://github.com/ernestmusong/Cultural-website.git
+ git clone https://github.com/ernestmusong/task-manager.git
 
  ### Install:
  Run: npm install
@@ -94,8 +99,9 @@ sh
 ## 🔭 Future Features <a name="future-features"></a>
 
 - [ ] **[Add real backend]**
-- [ ] **[Add admin dashboard]**
-- [ ] **[User profile picture uplaod upon registration]**
+- [ ] **[Responsive Design]**
+- [ ] **[Filter and Seach]**
+- [ ] **[User signup and login]**
  
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -103,7 +109,7 @@ sh
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/ernestmusong/Cultural-website/issues).
+Feel free to check the [issues page](https://github.com/ernestmusong/task-manager/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
