@@ -33,7 +33,7 @@ const RightMembers = () => (
           </a>
           <div className="topbar-text">
             <strong style={{ fontSize: '0.75rem', fontWeight: 'bold' }}>John Ryes</strong>
-            <span style={{ fontSize: '0.6rem', color: 'yellow' }}>example@gmail.com</span>
+            <span style={{ fontSize: '0.6rem', color: 'var(--mainYellow)' }}>example@gmail.com</span>
           </div>
         </div>
         <div className="edit-member-icon">
@@ -57,7 +57,7 @@ const RightMembers = () => (
           </a>
           <div className="topbar-text">
             <strong style={{ fontSize: '0.75rem', fontWeight: 'bold' }}>John Ryes</strong>
-            <span style={{ fontSize: '0.6rem', color: 'yellow' }}>example@gmail.com</span>
+            <span style={{ fontSize: '0.6rem', color: 'var(--mainYellow)' }}>example@gmail.com</span>
           </div>
         </div>
         <div className="edit-member-icon">
@@ -81,7 +81,7 @@ const RightMembers = () => (
           </a>
           <div className="topbar-text">
             <strong style={{ fontSize: '0.75rem', fontWeight: 'bold' }}>John Ryes</strong>
-            <span style={{ fontSize: '0.6rem', color: 'yellow' }}>example@gmail.com</span>
+            <span style={{ fontSize: '0.6rem', color: 'var(--mainYellow)' }}>example@gmail.com</span>
           </div>
         </div>
         <div className="edit-member-icon">
