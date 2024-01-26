@@ -16,7 +16,6 @@ const TodosList = () => {
   const [{ isOver }, drop] = useDrop({
     accept: 'TASK',
     drop: (item) => {
-      console.log(item);
       dispatch(handleTodoDrop(item));
     },
     collect: (monitor) => ({

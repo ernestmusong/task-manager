@@ -153,9 +153,14 @@ const EditTaskForm = () => {
               id="color"
               {...formik.getFieldProps('color')}
             >
+              <option className="text-muted" value="" disabled selected hidden>Select color</option>
               <option value="red">Red</option>
               <option value="green">Green</option>
               <option value="orange">Orange</option>
+              <option value="purple">Purple</option>
+              <option value="blue">Blue</option>
+              <option value="tomato">Tomato</option>
+              <option value="orange">Yellow</option>
 
             </select>
           </label>

@@ -149,6 +149,7 @@ const AddTaskForm = () => {
               id="color"
               {...formik.getFieldProps('color')}
             >
+              <option className="text-muted" value="" disabled selected hidden>Select color</option>
               <option value="red">Red</option>
               <option value="green">Green</option>
               <option value="orange">Orange</option>
