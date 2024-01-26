@@ -27,7 +27,7 @@ const TodosList = () => {
   const ToDoTasks = tasks.filter(((task) => task.status === 'todo')) || [];
   const todosLength = ToDoTasks.length;
   return (
-    <div className="tasks-container" style={{ height: todosLength === 0 ? 'calc(100vh - 208.9px)' : 'auto' }}>
+    <div className="tasks-container" style={{ height: todosLength === 0 ? 'calc(100vh - 319.9px)' : 'auto' }}>
       <div className="tasks-title-wrap">
         <span>To Do</span>
         <Link to="/add-task" className="tasks-title-icon-wrap">

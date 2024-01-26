@@ -23,7 +23,7 @@ const CompletedList = () => {
   const CompletedTasks = tasks.filter(((task) => task.status === 'completed')) || [];
   const completedLength = CompletedTasks.length;
   return (
-    <div className="tasks-container" style={{ height: completedLength === 0 ? 'calc(100vh - 208.9px)' : 'auto' }}>
+    <div className="tasks-container" style={{ height: completedLength === 0 ? 'calc(100vh - 319.9px)' : 'auto' }}>
       <div className="tasks-title-wrap">
         <span>Completed</span>
         <Link to="/add-task" className="tasks-title-icon-wrap">

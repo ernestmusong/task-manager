@@ -25,7 +25,7 @@ const InProgressList = () => {
   const inProgressTasks = tasks.filter(((task) => task.status === 'inProgress')) || [];
   const inProgressLength = inProgressTasks.length;
   return (
-    <div className="tasks-container" style={{ height: inProgressLength === 0 ? 'calc(100vh - 208.9px)' : 'auto' }}>
+    <div className="tasks-container" style={{ height: inProgressLength === 0 ? 'calc(100vh - 319.9px)' : 'auto' }}>
       <div className="tasks-title-wrap">
         <span>In Progress</span>
         <Link to="/add-task" className="tasks-title-icon-wrap">
