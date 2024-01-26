@@ -4,6 +4,7 @@ import TodosList from './TodosList';
 import FilterForm from './FilterForm';
 import InProgressList from './InProgressList';
 import CompletedList from './CompletedList';
+import ProgressBars from './ProgressBars';
 
 const Home = () => (
   <main className="main">
@@ -13,6 +14,7 @@ const Home = () => (
       <InProgressList />
       <CompletedList />
     </div>
+    <ProgressBars />
   </main>
 );
 

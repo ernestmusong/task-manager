@@ -1,5 +1,4 @@
 import React from 'react';
-import { Tooltip } from 'react-tooltip';
 import { Link } from 'react-router-dom';
 import { HiDotsVertical } from 'react-icons/hi';
 import { FaEllipsisH } from 'react-icons/fa';
@@ -21,7 +20,6 @@ const RightMembers = () => (
       >
         <FaEllipsisH />
       </Link>
-      <Tooltip anchorSelect=".my-anchor-element" place="bottom">Edit member</Tooltip>
     </div>
     <div className="members-list">
       <div className="member-wrap">
@@ -46,7 +44,6 @@ const RightMembers = () => (
           >
             <HiDotsVertical />
           </Link>
-          <Tooltip anchorSelect=".my-anchor-element" place="bottom">Edit member</Tooltip>
         </div>
       </div>
       <div className="member-wrap">
@@ -71,7 +68,6 @@ const RightMembers = () => (
           >
             <HiDotsVertical />
           </Link>
-          <Tooltip anchorSelect=".my-anchor-element" place="bottom">Edit member</Tooltip>
         </div>
       </div>
       <div className="member-wrap">
@@ -91,12 +87,11 @@ const RightMembers = () => (
         <div className="edit-member-icon">
           <Link
             to="/"
-            className="my-anchor-element"
+            className="my-anchor"
             style={{ color: 'var(--softGrey)' }}
           >
             <HiDotsVertical />
           </Link>
-          <Tooltip anchorSelect=".my-anchor-element" place="bottom">Edit member</Tooltip>
         </div>
       </div>
     </div>

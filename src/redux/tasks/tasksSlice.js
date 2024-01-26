@@ -16,10 +16,10 @@ const tasksSlice = createSlice({
       };
     },
 
-    selectTask: (state, action) => {
-      const taskSelected = action.payload;
+    selectTask: (state, { payload }) => {
+      const taskSelected = payload;
       const updatedTasks = state.tasks.map((task) => {
-        if (task.id === action.payload.id) {
+        if (task.id === payload.id) {
           localStorage.setItem('taskSelected', JSON.stringify(task));
           return { ...task, selected: true };
         }

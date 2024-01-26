@@ -8,9 +8,11 @@ import * as Yup from 'yup';
 const EditTaskForm = () => {
   const navigate = useNavigate();
   const taskSelected = JSON.parse(localStorage.getItem('taskSelected'));
+
   const [success, setSuccess] = useState(false);
   const [message, setMessage] = useState('');
   const [selectedImage, setSelectedImage] = useState(null);
+
   const formik = useFormik({
     initialValues: {
       id: taskSelected?.id || '',

@@ -1,5 +1,4 @@
 import React from 'react';
-import { Tooltip } from 'react-tooltip';
 import { Link } from 'react-router-dom';
 import { FaEllipsisH } from 'react-icons/fa';
 import '../../styles/RightSideBar.css';
@@ -15,12 +14,12 @@ const RightCalendar = () => (
       </div>
       <Link
         to="/"
-        className="my-anchor-element"
+        className="my"
         style={{ color: 'var(--softGrey)' }}
       >
         <FaEllipsisH />
       </Link>
-      <Tooltip anchorSelect=".my-anchor-element" place="bottom">Edit Calendar</Tooltip>
+      {/* <Tooltip anchorSelect=".my" place="bottom">Edit Calendar</Tooltip> */}
     </div>
     <div className="dates">
       <strong className="dates-title">Wednesday, 25 Jan 2024</strong>
