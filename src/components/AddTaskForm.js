@@ -64,7 +64,7 @@ const AddTaskForm = () => {
 
   return (
     <main className="main">
-      <Title title="Add Task" />
+      <Title title="Add Task:" />
       <div className="task-form-wrap">
         <form
           className="task-form"
