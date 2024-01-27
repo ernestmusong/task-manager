@@ -1,3 +1,22 @@
+:root {
+  --lightBlue: #1c2b3f;
+  --darkBlue: #182135;
+  --mainOrange: #f7902b;
+  --mainYellow: #ffa400;
+  --mainGreen: #008000;
+  --lightGreen: #00fff2;
+  --goldenYellow: #fff6a9;
+  --clr-grey: #8a8c8c;
+  --clr-white: #f0f0f0;
+  --softWhite: #fbfaf5;
+  --softGrey: #acaea9;
+  --clr-black: #000;
+  --lightRed: #ff65bd;
+  --mainGold: #daa520;
+  --White: #fff;
+  --simpleBlue: blue;
+}
+
 *,
 html,
 body {
@@ -9,9 +28,5 @@ body {
 }
 
 body {
-  color: var(--clr-grey-1);
   overflow-x: hidden;
-  font-size: 0.875rem;
-  box-sizing: border-box;
-  font-family: 'Popins', sans-serif;
 }

@@ -100,16 +100,14 @@ Clone this repository to your desired folder:
  ### Install:
  Run: npm install
 
+ ### Fix Linters: Eslint:
+ Run: npx eslint "**/*.{js,jsx}" --fix
+
+ ### Fix Linters: Stylelint:
+ Run: npx stylelint "**/*.{css,scss}" --fix
+
  ### Start:
  Run: npm start
-
- ### Eslint:
- Run: npx eslint "**/*.{js,jsx}" --fix
-
- ### Eslint Check:
- Run: npx eslint "**/*.{js,jsx}" --fix
- ### Stylelint Check:
- Run: npx stylelint "**/*.{css,scss}" --fix
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
